@@ -61,11 +61,13 @@
     0 4px 8px rgba(0, 0, 0, 0.3),
     0 0 20px rgba(184, 134, 11, 0.4);
   letter-spacing: 0.1em;
+  color: var(--antique-gold);
 }
 
 .loading-subtitle {
   font-family: var(--font-accent);
   font-size: 1.2rem;
+  color: var(--antique-gold);
   margin: 0 0 3rem 0;
   opacity: 0.9;
   font-style: italic;
@@ -116,7 +118,8 @@
 
 .loading-verse {
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 2rem;
+  color: var(--ink-black);
   line-height: 1.6;
   margin: 2rem 0 0 0;
   opacity: 0.8;

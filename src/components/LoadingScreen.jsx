@@ -11,7 +11,7 @@ const LoadingScreen = ({ onComplete }) => {
       // Timeline principal do loading
       const tl = gsap.timeline({
         onComplete: () => {
-          setTimeout(onComplete, 500)
+          setTimeout(onComplete, 1000 )
         }
       })
 
