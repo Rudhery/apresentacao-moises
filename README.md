@@ -257,7 +257,7 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 ## 🙏 **Agradecimentos**
 
 - **📖 Sagradas Escrituras** - Fonte de toda verdade e inspiração
-- **⛪ Igreja Evangélica** - Perspectiva teológica fundamentada
+<!-- - **⛪ Igreja Evangélica** - Perspectiva teológica fundamentada -->
 - **👥 Comunidade React** - Ferramentas e conhecimento compartilhado
 - **🎨 GSAP Team** - Biblioteca de animações extraordinária
 
