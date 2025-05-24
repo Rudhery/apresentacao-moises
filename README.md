@@ -90,7 +90,7 @@ Esta apresentação interativa conta a história épica de **Moisés**, o grande
 1. **Clone o repositório**
 
    ```bash
-   git clone https://github.com/seu-usuario/apresentacao-moises.git
+   git clone https://github.com/Rudhery/apresentacao-moises.git
    cd apresentacao-moises
    ```
 
