@@ -1,0 +1,174 @@
+.App {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Section base styles */
+.section {
+  min-height: 100vh;
+  padding: 100px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Typography */
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(3.5rem, 10vw, 9rem);
+  font-weight: 800;
+  line-height: 0.85;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, var(--antique-gold), var(--ancient-bronze));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-shadow: 0 4px 8px rgba(139, 115, 85, 0.3);
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.8rem, 7vw, 4.5rem);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--ink-black);
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 4px rgba(139, 115, 85, 0.2);
+}
+
+.subtitle {
+  font-family: var(--font-accent);
+  font-size: clamp(1.3rem, 3.5vw, 1.9rem);
+  color: var(--ink-black);
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* Ancient/Biblical gradient backgrounds */
+.gradient-bg-1 {
+  background: linear-gradient(135deg, 
+    rgba(114, 47, 55, 0.9) 0%, 
+    rgba(107, 91, 71, 0.9) 50%,
+    rgba(139, 115, 85, 0.9) 100%
+  );
+  position: relative;
+}
+
+.gradient-bg-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(205, 127, 50, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(184, 134, 11, 0.1) 0%, transparent 50%);
+  z-index: 1;
+}
+
+.gradient-bg-2 {
+  background: linear-gradient(135deg, 
+    rgba(135, 169, 107, 0.9) 0%, 
+    rgba(210, 180, 140, 0.9) 100%
+  );
+}
+
+.gradient-bg-3 {
+  background: linear-gradient(135deg, 
+    rgba(107, 91, 71, 0.9) 0%, 
+    rgba(139, 115, 85, 0.9) 50%,
+    rgba(205, 127, 50, 0.9) 100%
+  );
+}
+
+.gradient-bg-4 {
+  background: linear-gradient(135deg, 
+    rgba(184, 134, 11, 0.9) 0%, 
+    rgba(205, 127, 50, 0.9) 100%
+  );
+}
+
+/* Animated background elements */
+.floating-element {
+  position: absolute;
+  opacity: 0.08;
+  pointer-events: none;
+  font-size: 18rem;
+  color: var(--antique-gold);
+  z-index: 1;
+  text-shadow: 0 0 20px rgba(184, 134, 11, 0.3);
+}
+
+/* Cards with ancient scroll feel */
+.card {
+  background: linear-gradient(135deg, 
+    rgba(244, 241, 222, 0.98) 0%, 
+    rgba(245, 230, 211, 0.95) 100%
+  );
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-ancient);
+  border: 2px solid rgba(184, 134, 11, 0.2);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    rgba(184, 134, 11, 0.03) 0%, 
+    transparent 50%, 
+    rgba(205, 127, 50, 0.03) 100%
+  );
+  border-radius: 15px;
+  pointer-events: none;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    var(--shadow-ancient), 
+    0 15px 35px rgba(139, 115, 85, 0.25);
+  border-color: rgba(184, 134, 11, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 15px;
+  }
+  
+  .hero-title {
+    font-size: clamp(2.5rem, 9vw, 5rem);
+  }
+  
+  .section-title {
+    font-size: clamp(2.2rem, 8vw, 3.5rem);
+  }
+  
+  .card {
+    padding: 2rem;
+  }
+} 

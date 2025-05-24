@@ -1,0 +1,75 @@
+:root {
+  --antique-gold: #B8860B;
+  --deep-gold: #8B7355;
+  --parchment: #F4F1DE;
+  --papyrus: #E9C46A;
+  --olive-brown: #6B5B47;
+  --deep-burgundy: #722F37;
+  --ancient-bronze: #CD7F32;
+  --scroll-beige: #F5E6D3;
+  --ink-black: #2C2826;
+  --charcoal: #36454F;
+  --sage-green: #87A96B;
+  --desert-sand: #D2B48C;
+  
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Crimson Text', serif;
+  --font-accent: 'Old Standard TT', serif;
+  
+  --shadow-soft: 0 4px 6px -1px rgba(44, 40, 38, 0.15), 0 2px 4px -1px rgba(44, 40, 38, 0.1);
+  --shadow-medium: 0 10px 15px -3px rgba(44, 40, 38, 0.2), 0 4px 6px -2px rgba(44, 40, 38, 0.1);
+  --shadow-large: 0 25px 50px -12px rgba(44, 40, 38, 0.3);
+  --shadow-ancient: 0 8px 32px rgba(139, 115, 85, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink-black);
+  background: linear-gradient(135deg, var(--parchment) 0%, var(--scroll-beige) 100%);
+  overflow-x: hidden;
+  font-size: 18px;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scroll-beige);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--antique-gold);
+  border-radius: 5px;
+  border: 2px solid var(--scroll-beige);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--deep-gold);
+}
+
+/* Selection */
+::selection {
+  background: var(--antique-gold);
+  color: var(--parchment);
+}
+
+/* Focus styles */
+*:focus {
+  outline: 2px solid var(--antique-gold);
+  outline-offset: 2px;
+} 

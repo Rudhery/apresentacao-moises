@@ -1,0 +1,254 @@
+.miracles {
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.miracles::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg, 
+    rgba(114, 47, 55, 0.95) 0%, 
+    rgba(107, 91, 71, 0.95) 50%,
+    rgba(139, 115, 85, 0.95) 100%
+  );
+  z-index: 1;
+}
+
+.miracles .container {
+  position: relative;
+  z-index: 2;
+}
+
+.text-white {
+  color: white;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.miracles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.miracle-card {
+  position: relative;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+}
+
+.miracle-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.miracle-icon-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.miracle-icon {
+  font-size: 4rem;
+  display: block;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.icon-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.miracle-card:hover .icon-glow {
+  opacity: 1;
+}
+
+.miracle-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ink-black);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.miracle-description {
+  color: var(--olive-brown);
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.miracle-verse {
+  font-family: var(--font-accent);
+  font-size: 0.9rem;
+  color: var(--deep-gold);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  padding: 0.8rem;
+  background: rgba(184, 134, 11, 0.1);
+  border-left: 3px solid var(--antique-gold);
+  border-radius: 5px;
+  text-align: left;
+}
+
+.miracle-decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg, 
+    var(--antique-gold), 
+    var(--ancient-bronze), 
+    var(--antique-gold)
+  );
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.miracle-card:hover .miracle-decoration {
+  transform: scaleX(1);
+}
+
+.miracles-quote {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.miracles-quote blockquote {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: white;
+  position: relative;
+}
+
+.miracles-quote blockquote::before {
+  content: '"';
+  font-size: 4rem;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  color: var(--antique-gold);
+  opacity: 0.5;
+}
+
+.miracles-quote blockquote::after {
+  content: '"';
+  font-size: 4rem;
+  position: absolute;
+  bottom: -2rem;
+  right: -1rem;
+  color: var(--antique-gold);
+  opacity: 0.5;
+}
+
+.miracles-quote cite {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .miracles-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .miracle-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .miracle-icon {
+    font-size: 3rem;
+  }
+  
+  .miracle-title {
+    font-size: 1.3rem;
+  }
+  
+  .miracles-quote {
+    padding: 2rem;
+  }
+  
+  .miracles-quote blockquote {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .miracles-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .miracle-card {
+    padding: 1.5rem;
+  }
+  
+  .miracle-icon {
+    font-size: 2.5rem;
+  }
+  
+  .miracle-title {
+    font-size: 1.2rem;
+  }
+  
+  .miracle-description {
+    font-size: 0.95rem;
+  }
+  
+  .miracles-quote {
+    padding: 1.5rem;
+  }
+  
+  .miracles-quote blockquote {
+    font-size: 1rem;
+  }
+  
+  .miracles-quote blockquote::before,
+  .miracles-quote blockquote::after {
+    font-size: 2.5rem;
+  }
+} 
