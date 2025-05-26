@@ -11,7 +11,7 @@
 
 _Apresentação interativa desenvolvida em React com animações avançadas em GSAP_
 
-[🔗 **Ver Demo**](#) | [📖 **Documentação**](#funcionalidades) | [🚀 **Começar Agora**](#instalação)
+[🔗 **Ver Demo**]([#](https://apresentacao-moises.vercel.app/)) 
 
 </div>
 
