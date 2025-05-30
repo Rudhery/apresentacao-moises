@@ -12,7 +12,7 @@ const ParticleBackground = () => {
       const particles = []
       
       // Diferentes tipos de partículas (símbolos bíblicos)
-      const symbols = ['✝', '🕊', '⭐', '💫', '🌙', '☀️', '🔥', '💧', '🌊', '📜']
+      const symbols = ['📜', '🕊', '⭐', '💫', '🌙', '☀️', '🔥', '💧', '🌊', '📜']
       
       // Criar 30 partículas
       for (let i = 0; i < 30; i++) {

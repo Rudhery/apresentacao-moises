@@ -369,7 +369,7 @@ Assim como Moisés mediou a Antiga Aliança, Cristo medeia a Nova:
     <section id="hero" className="hero section gradient-bg-1" ref={scope}>
       {/* Floating elements */}
       <div className="floating-element" style={{ top: '5%', left: '8%' }}>
-        ✞
+        📜
       </div>
       
       <div className="floating-element" style={{ top: '15%', right: '12%' }}>
@@ -387,6 +387,7 @@ Assim como Moisés mediou a Antiga Aliança, Cristo medeia a Nova:
       <div className="container">
         <div className="hero-content">
           <h1 className="hero-title">
+            <br />
             <span className="hero-title-main">MOISÉS</span>
             <span className="hero-title-subtitle">O Libertador de Israel</span>
           </h1>

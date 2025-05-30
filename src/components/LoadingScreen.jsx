@@ -85,7 +85,7 @@ const LoadingScreen = ({ onComplete }) => {
     <div className="loading-screen" ref={scope}>
       <div className="loading-content">
         <div className="loading-logo">
-          <span className="logo-symbol">✝</span>
+          <span className="logo-symbol">📜</span>
         </div>
         
         <h1 className="loading-title">MOISÉS</h1>

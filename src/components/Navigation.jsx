@@ -32,7 +32,7 @@ const Navigation = () => {
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
-          <span className="logo-icon">✞</span>
+          {/* <span className="logo-icon">✞</span> */}
           <span className="logo-text">Moisés</span>
         </motion.div>
         

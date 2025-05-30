@@ -23,7 +23,8 @@ Esta apresentação interativa conta a história épica de **Moisés**, o grande
 
 ### 🎯 **Perspectiva Bíblica**
 
-- Baseado na **perspectiva evangélica protestante**
+<!-- - Baseado na **perspectiva evangélica protestante** -->
+
 - Conteúdo fundamentado nas **Sagradas Escrituras**
 - Interpretação **cristocêntrica** dos eventos
 - Referências bíblicas precisas e detalhadas
@@ -160,7 +161,7 @@ src/
 
 ### 🎨 **Sistema de Partículas**
 
-- **✝️ Símbolos Bíblicos**: Cruz, pomba, estrela, pergaminho, fogo, água
+- **📜 Símbolos Bíblicos**: Tábuas da Lei, pomba, estrela, pergaminho, fogo, água
 - **🌊 Movimento Fluido**: Animações parallax baseadas no scroll
 - **🎯 Performance**: Otimizado para não impactar a experiência
 
@@ -219,14 +220,14 @@ animations.staggerReveal([".hero-title", ".hero-description", ".hero-stats"]);
 ### 🔍 **Fundamentação Teológica**
 
 - **📜 Pentateuco**: Baseado nos 5 livros escritos por Moisés
-- **✝️ Tipologia Cristã**: Conexões com Cristo em cada evento
+- **📜 Tipologia Bíblica**: Conexões proféticas em cada evento
 - **📝 Referências**: Mais de 50 versículos bíblicos citados
 - **🏛️ Contexto Histórico**: Situação do Egito e Israel antigos
 
 ### 📚 **Temas Abordados**
 
 - 🔥 **Chamado Divino**: A sarça ardente e a comissão
-- ⚖️ **Mediação**: Moisés como tipo de Cristo
+- ⚖️ **Mediação**: Moisés como mediador divino
 - 🏺 **Milagres**: Demonstrações do poder de Deus
 - 📜 **Lei**: Estabelecimento dos princípios divinos
 - 🏆 **Legado**: Impacto eterno na história da salvação
@@ -267,6 +268,6 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 ### 🎯 **"Porque a palavra de Deus é viva, e eficaz..."** - Hebreus 4:12
 
-**Deus seja Louvado** ✝️
+**Deus seja Louvado** 📜
 
 </div>

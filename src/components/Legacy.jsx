@@ -127,7 +127,9 @@ const Legacy = () => {
             </p>
             <div className="tribute-signature">
               <span className="signature-line"></span>
-              <span className="signature-text">Soli Deo Gloria</span>
+              <span className="signature-text">"Sejam fortes e corajosos. Não tenham medo, nem fiquem apavorados por causa delas, pois o Senhor, o seu Deus, vai com vocês; nunca os deixará, nunca os abandonará."
+              <br />
+              Deuteronômio 31:6</span>
               <span className="signature-line"></span>
             </div>
           </div>
